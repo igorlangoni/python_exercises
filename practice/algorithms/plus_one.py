@@ -1,5 +1,4 @@
-import timeit
-import time
+from timer import runtimer, compare
 
 def plus_one(nums):
     """
@@ -58,12 +57,4 @@ def plus_one_alt(digits):
         digits.insert(0, 1)
     return digits
         
-st = time.perf_counter()
-plus_one([9, 9])
-ft = time.perf_counter()
-print(f"{((ft-st)*1000):.6f} mseconds")
-
-st = time.perf_counter()
-plus_one_alt([9, 9])
-ft = time.perf_counter()
-print(f"{((ft-st)*1000):.6f} mseconds")
+print(compare(runtimer(plus_one), runtimer(plus_one_alt)))
