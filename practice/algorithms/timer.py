@@ -21,7 +21,7 @@ def compare(*args):
         i += 1
     i = 1
     for k, v in sorted(fun.items(), key=lambda x:x[1]):
-        print(f"{i}: {k}, {v}")
+        print(f"{i}º: {k} --> {v} ms")
         i += 1
 
 
