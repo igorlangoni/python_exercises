@@ -73,7 +73,7 @@ def find_judge_alt(n, arr):
 
 # creates random n, judge and trusting relationships
 
-n = randint(500, 550)
+n = randint(20, 100)
 # print(f"n: {n}")
 j = randint(1, n)
 # print(f"j: {j}")
